@@ -20,9 +20,10 @@ const inputSchema = {
     .int()
     .min(1)
     .max(7)
+    .default(3)
     .describe(
       "How many days to forecast, counting today as day one. Open-Meteo covers up to 7 days; ask for 1 if only " +
-        "today matters, 3 for a general outlook, 7 for the full range.",
+        "today matters, 7 for the full range. Leave this out for a general outlook and you get 3.",
     ),
 };
 

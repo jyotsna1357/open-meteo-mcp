@@ -7,7 +7,7 @@ An MCP server that gives any MCP client weather forecasts and current conditions
 Requires Node 18 or newer. Nothing else — there is no API key and no configuration.
 
 ```bash
-git clone <this-repo-url>
+git clone https://github.com/jyotscharan/open-meteo-mcp.git
 cd open-meteo-mcp
 npm install
 npm run build
@@ -98,7 +98,7 @@ Two tools:
 
 | Tool | Arguments | Returns |
 | --- | --- | --- |
-| `get_forecast` | `city: string`, `days: 1–7` | One entry per day: conditions, high/low, chance and amount of rain, peak wind |
+| `get_forecast` | `city: string`, `days: 1–7` (optional, defaults to 3) | One entry per day: conditions, high/low, chance and amount of rain, peak wind |
 | `get_current` | `city: string` | Conditions, temperature, feels-like, humidity, wind, recent precipitation |
 
 Both accept a plain city name and resolve it through Open-Meteo's geocoder, so `"New York"` and `"Springfield, United States"` both work.
