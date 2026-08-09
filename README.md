@@ -7,7 +7,7 @@ An MCP server that gives any MCP client weather forecasts and current conditions
 Requires Node 18 or newer. Nothing else — there is no API key and no configuration.
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/open-meteo-mcp.git
+git clone <this-repo-url>
 cd open-meteo-mcp
 npm install
 npm run build
@@ -21,7 +21,20 @@ Connect it to Claude Code (run from the repo root, so `$(pwd)` resolves to the c
 claude mcp add weather -- node "$(pwd)/dist/index.js"
 ```
 
-Then ask: *"What's the weather in Lisbon this week?"*
+Check it registered with `claude mcp list`, then ask: *"What's the weather in Lisbon this week?"*
+
+For any other MCP client, add it to that client's config with an absolute path:
+
+```json
+{
+  "mcpServers": {
+    "weather": {
+      "command": "node",
+      "args": ["/absolute/path/to/open-meteo-mcp/dist/index.js"]
+    }
+  }
+}
+```
 
 To run the server directly — it speaks JSON-RPC over stdin/stdout and will sit there waiting for a client, which is the expected behaviour:
 
