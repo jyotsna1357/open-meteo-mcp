@@ -7,7 +7,7 @@ An MCP server that gives any MCP client weather forecasts and current conditions
 Requires Node 18 or newer. Nothing else — there is no API key and no configuration.
 
 ```bash
-git clone https://github.com/jyotscharan/open-meteo-mcp.git
+git clone https://github.com/jyotsna1357/open-meteo-mcp.git
 cd open-meteo-mcp
 npm install
 npm run build
