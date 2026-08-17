@@ -2,6 +2,8 @@
 
 An MCP server that gives any MCP client weather forecasts and current conditions for any city, backed by the free [Open-Meteo](https://open-meteo.com/en/docs) API — no API key, no account.
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/jyotsna1357-open-meteo-mcp-1dles0)](https://m8ven.ai/mcp/jyotsna1357-open-meteo-mcp-1dles0)
+
 ## Install
 
 Requires Node 18 or newer. Nothing else — there is no API key and no configuration.
