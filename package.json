@@ -3,6 +3,18 @@
   "version": "1.0.0",
   "description": "An MCP server exposing Open-Meteo weather forecasts and current conditions.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jyotsna1357/open-meteo-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "weather",
+    "forecast",
+    "open-meteo",
+    "claude"
+  ],
   "type": "module",
   "bin": {
     "open-meteo-mcp": "dist/index.js"
